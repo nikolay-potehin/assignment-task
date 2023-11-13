@@ -1,7 +1,7 @@
-import 'package:assignment_task/widgets/gadgets_card.dart';
+import 'package:assignment_task/pages/home/gadgets_card.dart';
 import 'package:assignment_task/widgets/my_title.dart';
-import 'package:assignment_task/widgets/room_card.dart';
-import 'package:assignment_task/widgets/stat_card.dart';
+import 'package:assignment_task/pages/home/room_card.dart';
+import 'package:assignment_task/pages/home/stat_card.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {

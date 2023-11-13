@@ -1,5 +1,5 @@
 import 'package:assignment_task/constants.dart';
-import 'package:assignment_task/pages/home_page.dart';
+import 'package:assignment_task/pages/home/home_page.dart';
 import 'package:assignment_task/pages/profile_page.dart';
 import 'package:assignment_task/pages/scenarious_page.dart';
 import 'package:assignment_task/widgets/navigation_icon.dart';
