@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: const Color.fromRGBO(249, 249, 249, 1),
           appBarTheme: const AppBarTheme(
             backgroundColor: Color.fromRGBO(249, 249, 249, 1),
+            surfaceTintColor: Colors.transparent,
           )),
       home: const MainPage(),
     );
