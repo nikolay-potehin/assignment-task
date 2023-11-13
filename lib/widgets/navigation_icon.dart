@@ -5,9 +5,11 @@ class NavigationIcon extends StatelessWidget {
   const NavigationIcon({
     super.key,
     required this.assetName,
+    required this.color,
   });
 
   final String assetName;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +18,10 @@ class NavigationIcon extends StatelessWidget {
       child: SizedBox(
         width: 20,
         height: 20,
-        child: SvgPicture.asset(assetName),
+        child: SvgPicture.asset(
+          assetName,
+          colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
+        ),
       ),
     );
   }

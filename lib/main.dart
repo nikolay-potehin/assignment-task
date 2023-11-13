@@ -1,3 +1,4 @@
+import 'package:assignment_task/constants.dart';
 import 'package:assignment_task/pages/home_page.dart';
 import 'package:assignment_task/pages/profile_page.dart';
 import 'package:assignment_task/pages/scenarious_page.dart';
@@ -46,20 +47,7 @@ class _MainPageState extends State<MainPage> {
         unselectedFontSize: 10,
         onTap: (newIndex) => setState(() => pageIndex = newIndex),
         currentIndex: pageIndex,
-        items: const [
-          BottomNavigationBarItem(
-            label: 'Дом',
-            icon: NavigationIcon(assetName: 'assets/icons/home.svg'),
-          ),
-          BottomNavigationBarItem(
-            label: 'Сценарии',
-            icon: NavigationIcon(assetName: 'assets/icons/scenarious.svg'),
-          ),
-          BottomNavigationBarItem(
-            label: 'Профиль',
-            icon: NavigationIcon(assetName: 'assets/icons/profile.svg'),
-          ),
-        ],
+        items: _bottomNavbarItems,
       ),
     );
   }
@@ -69,4 +57,40 @@ const _pages = [
   HomePage(),
   ScenariousPage(),
   ProfilePage(),
+];
+
+const _bottomNavbarItems = [
+  BottomNavigationBarItem(
+    label: 'Дом',
+    icon: NavigationIcon(
+      assetName: 'assets/icons/home.svg',
+      color: kSecondaryColor,
+    ),
+    activeIcon: NavigationIcon(
+      assetName: 'assets/icons/home.svg',
+      color: kPrimaryColor,
+    ),
+  ),
+  BottomNavigationBarItem(
+    label: 'Сценарии',
+    icon: NavigationIcon(
+      assetName: 'assets/icons/scenarious.svg',
+      color: kSecondaryColor,
+    ),
+    activeIcon: NavigationIcon(
+      assetName: 'assets/icons/scenarious.svg',
+      color: kPrimaryColor,
+    ),
+  ),
+  BottomNavigationBarItem(
+    label: 'Профиль',
+    icon: NavigationIcon(
+      assetName: 'assets/icons/profile.svg',
+      color: kSecondaryColor,
+    ),
+    activeIcon: NavigationIcon(
+      assetName: 'assets/icons/profile.svg',
+      color: kPrimaryColor,
+    ),
+  ),
 ];
