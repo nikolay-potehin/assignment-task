@@ -74,7 +74,7 @@ class HomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               RoomCard(
-                name: 'Детская',
+                name: 'Спальня',
                 gadgets: '3 устройства',
                 temperature: '26.5°C',
                 humidity: '—',

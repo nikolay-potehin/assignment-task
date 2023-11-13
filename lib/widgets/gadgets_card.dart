@@ -18,6 +18,7 @@ class GadgetsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: MyContainer(
+        onTap: () {},
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
