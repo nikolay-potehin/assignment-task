@@ -1,3 +1,4 @@
+import 'package:assignment_task/constants.dart';
 import 'package:assignment_task/widgets/my_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -25,7 +26,7 @@ class GadgetsCard extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                color: const Color.fromRGBO(108, 99, 255, 1),
+                color: kPrimaryColor,
                 borderRadius: BorderRadius.circular(40),
               ),
               child: SizedBox(
